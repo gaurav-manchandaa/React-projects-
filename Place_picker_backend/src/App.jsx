@@ -50,6 +50,8 @@ function App() {
       }
       return [selectedPlace, ...prevPickedPlaces];
     });
+
+    
     try {
       await UpdateuserPlaces([selectedPlace, ...userPlaces]);
       
